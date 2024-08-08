@@ -1,6 +1,11 @@
 import Image from "next/image";
 
-const techStacks = [
+interface TechStack {
+  name: string;
+  src: string;
+}
+
+const techStacks: TechStack[] = [
   { name: "HTML", src: "/TechStack/html-5.svg" },
   { name: "CSS", src: "/TechStack/css-3.svg" },
   { name: "JavaScript", src: "/TechStack/javascript.svg" },
@@ -14,7 +19,7 @@ const techStacks = [
   { name: "Python", src: "/TechStack/python.svg" },
   { name: "Haskell", src: "/TechStack/haskell.svg" },
 ];
-const CardTechStack = ({ name, src }: any) => {
+const CardTechStack = ({ name, src }: TechStack) => {
   return (
     <div className="bg-[#121212] items-center mx-auto p-3 rounded-xl relative w-24 h-24 group">
       <Image
