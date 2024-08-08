@@ -2,7 +2,15 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function CardProject({ name, desc, image, techStacks, url}: any) {
+interface Project {
+  name: string;
+  desc: string;
+  image: string;
+  techStacks: string[];
+  url: string;
+}
+
+export default function CardProject({ name, desc, image, techStacks, url}: Project) {
   return (
     <div className="w-full bg-[#121212] rounded-xl">
       <div className="h-48 overflow-hidden">
