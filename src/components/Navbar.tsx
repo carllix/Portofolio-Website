@@ -5,8 +5,8 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 
 export default function Navbar() {
-  const [activeId, setActiveId] = useState('home');
-  const sectionRefs = useRef({});
+  const [activeId, setActiveId] = useState("home");
+  const sectionRefs = useRef<Record<string, HTMLElement | null>>({});
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -20,7 +20,7 @@ export default function Navbar() {
       { threshold: 0.7 }
     );
 
-    const sections = ["home", "about", "projects", "achievements", "contact"];	
+    const sections = ["home", "about", "projects", "achievements", "contact"];
     sections.forEach((id) => {
       const section = document.getElementById(id);
       if (section) {
@@ -39,9 +39,12 @@ export default function Navbar() {
     };
   }, []);
 
-  const handleLinkClick = (id) => {
+  const handleLinkClick = (id: string) => {
     setActiveId(id);
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -54,7 +57,7 @@ export default function Navbar() {
             onClick={() => handleLinkClick("home")}
           >
             <Image
-              src="computer.svg"
+              src="/computer.svg"
               alt="computer"
               width={32}
               height={32}
@@ -64,42 +67,18 @@ export default function Navbar() {
           </Link>
         </div>
         <div className="basis-1/2 flex items-center justify-evenly font-semibold">
-          <Link
-            href="#about"
-            className={`py-1 duration-100 hover:text-[rgb(135,196,182)] ${
-              activeId === "about" ? "text-[rgb(135,196,182)]" : ""
-            }`}
-            onClick={() => handleLinkClick("about")}
-          >
-            About Me
-          </Link>
-          <Link
-            href="#projects"
-            className={`py-1 duration-100 hover:text-[rgb(135,196,182)] ${
-              activeId === "projects" ? "text-[rgb(135,196,182)]" : ""
-            }`}
-            onClick={() => handleLinkClick("projects")}
-          >
-            Projects
-          </Link>
-          <Link
-            href="#achievements"
-            className={`py-1 duration-100 hover:text-[rgb(135,196,182)] ${
-              activeId === "achievements" ? "text-[rgb(135,196,182)]" : ""
-            }`}
-            onClick={() => handleLinkClick("achievements")}
-          >
-            Achievements
-          </Link>
-          <Link
-            href="#contact"
-            className={`py-1 duration-100 hover:text-[rgb(135,196,182)] ${
-              activeId === "contact" ? "text-[rgb(135,196,182)]" : ""
-            }`}
-            onClick={() => handleLinkClick("contact")}
-          >
-            Contact
-          </Link>
+          {["about", "projects", "achievements", "contact"].map((id) => (
+            <Link
+              key={id}
+              href={`#${id}`}
+              className={`py-1 duration-100 hover:text-[rgb(135,196,182)] ${
+                activeId === id ? "text-[rgb(135,196,182)]" : ""
+              }`}
+              onClick={() => handleLinkClick(id)}
+            >
+              {id.charAt(0).toUpperCase() + id.slice(1)}
+            </Link>
+          ))}
         </div>
       </nav>
     </div>
