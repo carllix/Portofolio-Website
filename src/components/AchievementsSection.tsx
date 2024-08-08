@@ -24,7 +24,7 @@ const achievements: Achievement[] = [
   },
 ];
 
-const CardAchievement = ({title, date, desc, image}: any) => {
+const CardAchievement = ({title, date, desc, image}: Achievement) => {
   return (
     <div className="bg-[#121212] rounded-xl flex py-5 px-7 my-8 items-center">
       <div className="basis-1/4">
