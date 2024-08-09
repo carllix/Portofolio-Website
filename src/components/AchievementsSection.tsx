@@ -26,17 +26,17 @@ const achievements: Achievement[] = [
 
 const CardAchievement = ({title, date, desc, image}: Achievement) => {
   return (
-    <div className="bg-[#121212] rounded-xl flex py-5 px-7 my-8 items-center">
+    <div className="bg-[#121212] rounded-xl flex flex-col md:flex-row py-5 px-7 my-8 items-center">
       <div className="basis-1/4">
         <Image
           src={`/Achievements/${image}`}
           alt={title}
           width={500}
           height={500}
-          className="w-full h-44 rounded-xl"
+          className="w-auto h-full rounded-xl"
         />
       </div>
-      <div className="basis-3/4 ml-7 text-start">
+      <div className="basis-3/4 md:ml-7 text-start mt-5 md:mt-0">
         <p className="font-bold text-xl">{title}</p>
         <p className="mt-2 text-[rgb(135,196,182)]">{date}</p>
         <p className="mt-4 font-sm">{desc}</p>
@@ -46,7 +46,10 @@ const CardAchievement = ({title, date, desc, image}: Achievement) => {
 }
 export default function AchievementsSection() {
   return (
-    <div className="w-11/12 mx-auto pt-20 text-center" id="achievements">
+    <div
+      className="w-11/12 mx-auto pt-20 text-center px-5 md:px-0"
+      id="achievements"
+    >
       <p className="text-3xl font-black">
         My <span className="text-[rgb(135,196,182)]">Achievements</span>
       </p>
