@@ -43,7 +43,12 @@ export default function HomeSection() {
             </Link>
           </Button>
           <Button variant="secondary" className="ml-5">
-            Download CV
+            <Link
+              href="https://drive.google.com/file/d/1sKt6l6h8XS7cWDhZNFAJTWhMLyzXnuua/view?usp=sharing"
+              target="_blank"
+            >
+              View My CV
+            </Link>
           </Button>
         </div>
       </div>
