@@ -43,17 +43,17 @@ To run it locally:
 | Bonus | Status |
 |---|---|
 |Deployment|Finished|
-|Responsive Design|Not Completed|
+|Responsive Design|Finished|
 |Database or CMS Usage|Not Completed|
 |Creativity|Finished|
 
+## Problems
+I had difficulties when creating a responsive navbar for mobile views.
 
-## Difficulties Encountered
-
-## Creator's Identity
+## Author Information
 Name : Carlo Angkisan
 
-NIM : 19623005
+NIM : 19623005/13523091
 
 Clan : S
 
