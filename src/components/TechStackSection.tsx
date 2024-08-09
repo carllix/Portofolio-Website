@@ -21,7 +21,7 @@ const techStacks: TechStack[] = [
 ];
 const CardTechStack = ({ name, src }: TechStack) => {
   return (
-    <div className="bg-[#121212] items-center mx-auto p-3 rounded-xl relative w-24 h-24 group">
+    <div className="bg-[#121212] items-center mx-auto p-3 rounded-xl relative w-20 h-20 group">
       <Image
         src={src}
         alt={name}
@@ -37,11 +37,11 @@ const CardTechStack = ({ name, src }: TechStack) => {
 }
 export default function TechStackSection() {
   return (
-    <div className="w-11/12 mx-auto mt-20 text-center">
+    <div className="w-11/12 mx-auto mt-20 text-center px-5 md:px-0">
       <p className="text-3xl font-black">
         My <span className="text-[rgb(135,196,182)]">Tech Stack</span>
       </p>
-      <div className="my-8 grid grid-cols-8 gap-6">
+      <div className="my-8 grid grid-cols-3 sm:grid-cols-5 md:grid-cols-6 lg:grid-cols-8 gap-6">
         {techStacks.map((techStack) => (
           <CardTechStack
             name={techStack.name}
