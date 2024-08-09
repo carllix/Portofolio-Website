@@ -121,9 +121,7 @@ export default function Navbar() {
           <Link
             key={id}
             href={`#${id}`}
-            className={`text-lg mb-5 duration-100 hover:text-[rgb(135,196,182)] ${
-                activeId === id ? "text-[rgb(135,196,182)]" : ""
-              }`}
+            className={"text-lg mb-5 duration-100 hover:text-[rgb(135,196,182)]"}
             onClick={() => handleLinkClick(id)}
           >
             {id.charAt(0).toUpperCase() + id.slice(1)}
