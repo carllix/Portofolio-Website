@@ -6,7 +6,7 @@ import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 export default function HomeSection() {
   return (
     <div
-      className="flex flex-col-reverse text-center w-11/12 mx-auto mt-10 items-center md:flex-row md:text-left"
+      className="flex flex-col-reverse text-center w-11/12 mx-auto mt-24 items-center md:flex-row md:text-left"
       id="home"
     >
       <div className="basis-2/3">
