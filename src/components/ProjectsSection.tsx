@@ -23,15 +23,31 @@ const projects: Project[] = [
     techStacks: ["Figma"],
     url: "https://www.figma.com/proto/7wmZy647dZfYad3aIYLkph/KOMMAS?node-id=1-3&t=pr1ebyk7pZPOP3do-1",
   },
+  {
+    name: "Coming Soon",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totam repudiandae excepturi dolore quos dolorem ex blanditiis labore aspernatur ducimus ea exercitationem beatae optio suscipit. Quod culpa ad cum corporis.",
+    image: "ComingSoon.jpg",
+    techStacks: ["Soon"],
+    url: "https://www.figma.com/proto/7wmZy647dZfYad3aIYLkph/KOMMAS?node-id=1-3&t=pr1ebyk7pZPOP3do-1",
+  },
+  {
+    name: "Coming Soon",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totam repudiandae excepturi dolore quos dolorem ex blanditiis labore aspernatur ducimus ea exercitationem beatae optio suscipit. Quod culpa ad cum corporis.",
+    image: "ComingSoon.jpg",
+    techStacks: ["Soon"],
+    url: "https://www.figma.com/proto/7wmZy647dZfYad3aIYLkph/KOMMAS?node-id=1-3&t=pr1ebyk7pZPOP3do-1",
+  },
 ];
-
 export default function ProjectsSection() {
   return (
-    <div className="w-11/12 mx-auto text-center pt-20" id="projects">
+    <div
+      className="w-11/12 mx-auto text-center pt-20 px-5 md:px-0"
+      id="projects"
+    >
       <p className="text-3xl font-black">
         My <span className="text-[rgb(135,196,182)]">Projects</span>
       </p>
-      <div className="my-8 grid grid-cols-4 gap-10">
+      <div className="my-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
         {projects.map((project) => (
           <CardProject
             name={project.name}
