@@ -62,27 +62,6 @@ export default function AboutSection() {
               height={50}
               className="size-10 duration-500 hover:translate-y-[-5px] "
             />
-            <Image
-              src="/Hobbies/sleep.svg"
-              alt="sleeping"
-              width={50}
-              height={50}
-              className="size-10 duration-500 hover:translate-y-[-5px] "
-            />
-            <Image
-              src="/Hobbies/sleep.svg"
-              alt="sleeping"
-              width={50}
-              height={50}
-              className="size-10 duration-500 hover:translate-y-[-5px] "
-            />
-            <Image
-              src="/Hobbies/sleep.svg"
-              alt="sleeping"
-              width={50}
-              height={50}
-              className="size-10 duration-500 hover:translate-y-[-5px] "
-            />
           </div>
         </div>
       </div>

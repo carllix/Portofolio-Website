@@ -16,7 +16,7 @@ export default function HomeSection() {
           <span className="text-[rgb(135,196,182)]">Carlo Angkisan</span>
         </p>
         <p className="text-sm font-semibold mt-2 md:text-lg md:mt-5">
-          <span className="text-[rgb(135,196,182)]">Spartan</span> | Frontend
+          <span className="text-[rgb(135,196,182)]">Student</span> | Frontend
           Developer
         </p>
         <div className="flex space-x-5 mt-3 justify-center md:mt-4 md:justify-start">

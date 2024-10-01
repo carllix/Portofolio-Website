@@ -24,18 +24,17 @@ const projects: Project[] = [
     url: "https://www.figma.com/proto/7wmZy647dZfYad3aIYLkph/KOMMAS?node-id=1-3&t=pr1ebyk7pZPOP3do-1",
   },
   {
-    name: "Coming Soon",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totam repudiandae excepturi dolore quos dolorem ex blanditiis labore aspernatur ducimus ea exercitationem beatae optio suscipit. Quod culpa ad cum corporis.",
-    image: "ComingSoon.jpg",
-    techStacks: ["Soon"],
-    url: "https://www.figma.com/proto/7wmZy647dZfYad3aIYLkph/KOMMAS?node-id=1-3&t=pr1ebyk7pZPOP3do-1",
-  },
-  {
-    name: "Coming Soon",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, totam repudiandae excepturi dolore quos dolorem ex blanditiis labore aspernatur ducimus ea exercitationem beatae optio suscipit. Quod culpa ad cum corporis.",
-    image: "ComingSoon.jpg",
-    techStacks: ["Soon"],
-    url: "https://www.figma.com/proto/7wmZy647dZfYad3aIYLkph/KOMMAS?node-id=1-3&t=pr1ebyk7pZPOP3do-1",
+    name: "PathWay",
+    desc: "PathWay is a digital platform specifically designed to meet the needs of students in efficiently accessing important information. We understand the importance of accurate and centralized information, especially regarding competitions, scholarships, and other opportunities that can support students' academic and career journeys.",
+    image: "PathWay.png",
+    techStacks: [
+      "Next.js",
+      "NextAuth.js",
+      "Tailwind CSS",
+      "Typescript",
+      "Prisma",
+    ],
+    url: "https://5-path-way.vercel.app/",
   },
 ];
 export default function ProjectsSection() {

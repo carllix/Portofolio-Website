@@ -9,6 +9,12 @@ interface Achievement {
 
 const achievements: Achievement[] = [
   {
+    title: "Best Staff September OSKM ITB 2024 - Information",
+    date: "September 2024",
+    desc: "My responsibilities here included creating an 'About Us' page for the OSKM ITB 2024 website and developing as well as integrating a merchandise exchange page for the ITB-X dashboard.",
+    image: "BestStaffOSKM2024.jpg",
+  },
+  {
     title:
       "Outstanding Academic Student at SMAN 1 Bekasi for the 2022/2023 Academic Year",
     date: "23 May 2023",
