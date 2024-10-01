@@ -1,7 +1,7 @@
 # Personal Portofolio Website
 
 ## Description
-This is my personal portfolio website, created as part of the SPARTA 2023 Software Engineering career path assignment. The website is a single-page application with several sections. It has been deployed using Vercel, and you can view it directly at [Carlo Portofolio Website](https://carlo-portofolio-website.vercel.app/)
+This is my personal portfolio website. The website is a single-page application with several sections. It has been deployed using Vercel, and you can view it directly at [Carlo Portofolio Website](https://carlo-portofolio-website.vercel.app/)
 
 ## Section
 - **Home**: Contains my name, a profile picture, links to my social media, and my CV.
@@ -38,25 +38,4 @@ To run it locally:
    npm run dev
    ```
    Access the application via `http://localhost:3000` in your web browser.
-   
-## Bonus Status
-| Bonus | Status |
-|---|---|
-|Deployment|Finished|
-|Responsive Design|Finished|
-|Database or CMS Usage|Not Completed|
-|Creativity|Finished|
-
-## Problems
-I had difficulties when creating a responsive navbar for mobile views.
-
-## Author Information
-Name : Carlo Angkisan
-
-NIM : 19623005/13523091
-
-Clan : S
-
-Career Path : Software Engineering
-
 
